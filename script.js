@@ -17,7 +17,7 @@ var Typer={
 	text: null,
 	accessCountimer:null,
 	index:0, // current cursor position
-	speed:2, // speed of the Typer
+	speed:3, // speed of the Typer
 	file:"", //file, must be set
 	accessCount:0, //times alt is pressed for Access Granted
 	deniedCount:0, //times caps is pressed for Access Denied
@@ -68,7 +68,11 @@ var Typer={
 		if(key.key==='Alt'){// key 18 = alt key
 			Typer.accessCount++; //increase counter
 			if(Typer.accessCount>=3){// if it's pressed 3 times
-				Typer.makeAccess(); // make access popup
+				Typer.makeAccess();
+				speed=100;// make access popup
+			}
+			if(Typer.accessCount>=5){// if it's pressed 3 times
+				speed=10000; // make access popup
 			}
 		}else if(key.key==='CapsLock'){// key 20 = caps lock
 			Typer.deniedCount++; // increase counter
