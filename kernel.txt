@@ -11,9 +11,43 @@ struct group_info *groups_alloc(int gidsetsize){
 
 
 	nblocks = (gidsetsize + NGROUPS_PER_BLOCK - 1) / NGROUPS_PER_BLOCK;
+
 	
-	                                                                                
-                                                                                
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
                                     `:::::-                                     
                                  -::-     .:::`                                 
                              `:::.           `:::.                              
