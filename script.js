@@ -69,10 +69,10 @@ var Typer={
 			Typer.accessCount++; //increase counter
 			if(Typer.accessCount>=3){// if it's pressed 3 times
 				Typer.makeAccess();
-				speed=100;// make access popup
+				Typer.speed=100;// make access popup
 			}
 			if(Typer.accessCount>=5){// if it's pressed 3 times
-				speed=10000; // make access popup
+				Typer.speed=10000; // make access popup
 			}
 		}else if(key.key==='CapsLock'){// key 20 = caps lock
 			Typer.deniedCount++; // increase counter
